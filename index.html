@@ -44,6 +44,8 @@
     .paper-links { display:flex; gap:14px; font-size:12px; font-weight:650; margin-top:6px }
     .contact { color:var(--muted) } footer { border-top:1px solid var(--line); padding:26px 0 45px; color:#98a4b2; font-size:12px }
     @media(max-width:680px) { main{padding-top:36px}.intro{grid-template-columns:1fr;gap:19px;margin-bottom:55px}.portrait{width:140px;height:155px}h1{font-size:29px}.links{gap:12px;font-size:12px}nav{align-items:flex-start;flex-direction:column;padding:13px 0;gap:7px}.news-row{grid-template-columns:78px 1fr;gap:12px}.timeline{grid-template-columns:1fr;gap:4px}.heading{gap:12px}section{margin-bottom:55px}.project{padding:19px} }
+    .socials a {display: inline-flex;align-items: center;gap: 6px;}
+    .socials i {font-size: 16px;}    
   </style>
 </head>
 <body>
@@ -61,7 +63,27 @@
         <p>Hello! I'm Jongsoo, a Ph.D. student at POSTECH, advised by Prof. Soohee Han.</p>
         <p>My research focuses on reinforcement learning under delayed feedback in real-world robotic systems, aiming to help agents make better decisions in the presence of sensing, actuation, and communication delays. I'm always happy to connect, exchange ideas, and explore new research collaborations.</p>
         <p>If you have any questions or just want to chat about research, feel free to reach out!</p>
-        <div class="socials"><a href="https://github.com/jongsoolee" target="_blank" rel="noopener">GitHub ↗</a><a href="https://www.linkedin.com/in/jsl95" target="_blank" rel="noopener">LinkedIn ↗</a><a href="https://scholar.google.com/citations?user=-YXP3fkAAAAJ&hl=ko&oi=ao" target="_blank" rel="noopener">Google Scholar ↗</a></div>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+        
+        <div class="socials">
+          <a href="https://github.com/jongsoolee" target="_blank" rel="noopener">
+            <i class="fa-brands fa-github"></i> GitHub
+          </a>
+        
+          <a href="https://www.linkedin.com/in/jsl95" target="_blank" rel="noopener">
+            <i class="fa-brands fa-linkedin"></i> LinkedIn
+          </a>
+        
+          <a href="https://scholar.google.com/citations?user=-YXP3fkAAAAJ" target="_blank" rel="noopener">
+            <i class="fa-brands fa-google-scholar"></i> Google Scholar
+          </a>
+        
+          <a href="mailto:jjongs@postech.ac.kr">
+            <i class="fa-solid fa-envelope"></i> Email
+          </a>
+        </div>
+        
       </div>
     </div>
 
