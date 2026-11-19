@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Jongsoo Lee — Ph.D. student at POSTECH researching reinforcement learning, delayed feedback, and robotics." />
+  <title>Jongsoo Lee | Research</title>
+  <style>
+    :root { --ink:#1d2937; --muted:#667387; --line:#e8edf2; --blue:#2b648f; --pale:#f5f8fb; }
+    * { box-sizing:border-box } html { scroll-behavior:smooth; scroll-padding-top:86px }
+    body { margin:0; background:white; color:var(--ink); font:15px/1.75 -apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif; }
+    a { color:var(--blue); text-decoration:none } a:hover { text-decoration:underline }
+    .shell { width:min(920px,calc(100% - 44px)); margin:0 auto; }
+    header { position:sticky; top:0; z-index:4; background:rgba(255,255,255,.94); backdrop-filter:blur(12px); border-bottom:1px solid var(--line) }
+    nav { display:flex; align-items:center; justify-content:space-between; gap:16px; min-height:68px }
+    .logo { font-weight:750; font-size:17px; color:var(--ink); letter-spacing:-.5px }
+    .links { display:flex; gap:24px; flex-wrap:wrap; font-size:13px; font-weight:600; }
+    .links a { color:#4c596b } .links a:hover { color:var(--blue) }
+    main { padding:64px 0 48px }
+    .intro { display:grid; grid-template-columns:164px 1fr; gap:35px; align-items:start; margin-bottom:76px }
+    .portrait { display:block; width:164px; height:190px; border-radius:10px; object-fit:cover; border:1px solid var(--line); background:var(--pale); }
+    h1 { font-size:33px; letter-spacing:-1.2px; line-height:1.25; margin:0 0 7px; }
+    .kr { font-size:19px; color:var(--muted); font-weight:400; margin-left:8px }
+    .role { color:var(--muted); font-size:14px; margin:0 0 18px }
+    .intro p { margin:0 0 15px; } .socials { display:flex; gap:17px; flex-wrap:wrap; margin-top:15px; font-weight:600; font-size:13px }
+    .tags { display:flex; gap:7px; flex-wrap:wrap; margin-top:17px }
+    .tag { font-size:11px; font-weight:600; padding:3px 9px; background:var(--pale); border:1px solid #e8eef5; border-radius:5px; color:#647587 }
+    section { margin:0 0 76px }
+    .heading { display:flex; align-items:baseline; gap:18px; border-bottom:1px solid var(--line); padding-bottom:13px; margin-bottom:25px }
+    .num { font-size:12px; color:#9aa9b8; font-weight:750; letter-spacing:.6px }
+    h2 { margin:0; font-size:22px; line-height:1.35; letter-spacing:-.6px }
+    h3 { font-size:17px; margin:0 0 6px; line-height:1.45; letter-spacing:-.25px }
+    .news { display:grid; gap:13px } .news-row { display:grid; grid-template-columns:100px 1fr; gap:22px }
+    .date { color:#738295; font-size:13px; font-weight:600 }
+    .section-lead { color:var(--muted); margin-top:-8px; margin-bottom:26px }
+    .project { border:1px solid var(--line); border-radius:10px; padding:25px 27px; margin-bottom:15px; background:#fff }
+    .eyebrow { color:#8997a7; font-size:12px; font-weight:650; margin-bottom:9px }
+    .project p { margin:5px 0 10px } .project .tags { margin-top:12px }
+    .timeline { display:grid; grid-template-columns:148px 1fr; gap:19px; padding:18px 0; border-bottom:1px solid var(--line) }
+    .timeline:last-child { border-bottom:0 } .timeline p { margin:3px 0 0; color:var(--muted) }
+    .paper { display:grid; grid-template-columns:32px 1fr; gap:15px; margin-bottom:27px }
+    .paper-num { font-weight:700; color:#a3afbd; font-size:14px; padding-top:2px }
+    .paper p { margin:3px 0 } .authors { color:#586779; font-size:13px } .venue { color:#53677e; font-size:13px; font-weight:650 }
+    .paper-links { display:flex; gap:14px; font-size:12px; font-weight:650; margin-top:6px }
+    .contact { color:var(--muted) } footer { border-top:1px solid var(--line); padding:26px 0 45px; color:#98a4b2; font-size:12px }
+    @media(max-width:680px) { main{padding-top:36px}.intro{grid-template-columns:1fr;gap:19px;margin-bottom:55px}.portrait{width:140px;height:155px}h1{font-size:29px}.links{gap:12px;font-size:12px}nav{align-items:flex-start;flex-direction:column;padding:13px 0;gap:7px}.news-row{grid-template-columns:78px 1fr;gap:12px}.timeline{grid-template-columns:1fr;gap:4px}.heading{gap:12px}section{margin-bottom:55px}.project{padding:19px} }
+  </style>
+</head>
+<body>
+  <header><nav class="shell" aria-label="Main navigation">
+    <a class="logo" href="#top">Jongsoo Lee</a>
+    <div class="links"><a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#publications">Publications</a><a href="#contact">Contact</a></div>
+  </nav></header>
+  <main class="shell" id="top">
+    <div class="intro">
+      <!-- Replace avatar image with a portrait if desired: src="profile.jpg" -->
+      <img class="portrait" src="https://github.com/jongsoolee.png" alt="Jongsoo Lee GitHub profile avatar" />
+      <div>
+        <h1>Jongsoo Lee <span class="kr">이종수</span></h1>
+        <div class="role">Ph.D. Student in Convergence IT Engineering · <a href="https://www.postech.ac.kr/" target="_blank" rel="noopener">POSTECH</a></div>
+        <p>I am a Ph.D. student at POSTECH, advised by Prof. Soohee Han. My research focuses on reinforcement learning for real-world robotic systems, particularly environments with delayed feedback, uncertainty, and dynamics mismatch.</p>
+        <p>I am interested in developing efficient and robust decision-making methods that bridge theoretical reinforcement learning and practical robotic control.</p>
+        <div class="tags"><span class="tag">Reinforcement Learning</span><span class="tag">Delayed Feedback</span><span class="tag">Robotics</span><span class="tag">Sim-to-Real</span></div>
+        <div class="socials"><a href="https://github.com/jongsoolee" target="_blank" rel="noopener">GitHub ↗</a><a href="https://arxiv.org/abs/2604.03641" target="_blank" rel="noopener">Recent Paper ↗</a><!-- Add Google Scholar / CV / email links here. --></div>
+      </div>
+    </div>
+
+    <section id="news"><div class="heading"><span class="num">01</span><h2>News</h2></div>
+      <div class="news">
+        <div class="news-row"><span class="date">Oct 2026</span><div>Our paper, <strong>Delayed Homomorphic Reinforcement Learning for Environments with Delayed Feedback</strong>, was accepted to <strong>NeurIPS 2026</strong>.</div></div>
+        <div class="news-row"><span class="date">2026</span><div>Our work on conservative reinforcement learning under random delays appeared in <strong>Neural Networks</strong>.</div></div>
+      </div>
+    </section>
+
+    <section id="projects"><div class="heading"><span class="num">02</span><h2>Projects</h2></div>
+      <p class="section-lead">Selected research directions in reinforcement learning and robotic decision-making.</p>
+      <article class="project"><div class="eyebrow">Research · Delayed Reinforcement Learning</div><h3>Learning under Delayed Feedback</h3>
+        <p>Developing reinforcement learning methods that address delayed observations, actions, and rewards. Our DHRL framework uses MDP homomorphisms to identify control-redundant augmented states and improve learning efficiency.</p>
+        <div class="paper-links"><a href="https://arxiv.org/abs/2604.03641" target="_blank" rel="noopener">Paper ↗</a><a href="https://github.com/jongsoolee/DHRL" target="_blank" rel="noopener">Code ↗</a></div>
+        <div class="tags"><span class="tag">MDP Homomorphisms</span><span class="tag">Actor-Critic</span><span class="tag">Delays</span></div>
+      </article>
+      <article class="project"><div class="eyebrow">Research Direction · Robotics</div><h3>Robust Sim-to-Real Reinforcement Learning</h3>
+        <p>Investigating belief and state estimation for robotic control when deployed dynamics differ from simulation. Areas of interest include model-based prediction, residual adaptation, and uncertainty-aware policy learning.</p>
+        <div class="tags"><span class="tag">State Estimation</span><span class="tag">Residual Learning</span><span class="tag">Domain Adaptation</span></div>
+      </article>
+    </section>
+
+    <section id="experience"><div class="heading"><span class="num">03</span><h2>Experience</h2></div>
+      <div class="timeline"><span class="date">Present</span><div><h3>POSTECH</h3><p>Ph.D. Research · Reinforcement Learning & Robotics</p></div></div>
+    </section>
+
+    <section id="education"><div class="heading"><span class="num">04</span><h2>Education</h2></div>
+      <div class="timeline"><span class="date">Present</span><div><h3>Pohang University of Science and Technology (POSTECH)</h3><p>Ph.D. Student, Convergence IT Engineering</p></div></div>
+      <!-- Add previous degrees here after verifying dates and institutions. -->
+    </section>
+
+    <section id="publications"><div class="heading"><span class="num">05</span><h2>Selected Publications</h2></div>
+      <div class="paper"><span class="paper-num">01</span><div><h3>Delayed Homomorphic Reinforcement Learning for Environments with Delayed Feedback</h3><p class="authors"><strong>Jongsoo Lee</strong>, Jangwon Kim, Soohee Han</p><p class="venue">Advances in Neural Information Processing Systems (NeurIPS), 2026 · Accepted</p><div class="paper-links"><a href="https://arxiv.org/abs/2604.03641" target="_blank" rel="noopener">arXiv ↗</a><a href="https://github.com/jongsoolee/DHRL" target="_blank" rel="noopener">Code ↗</a></div></div></div>
+      <div class="paper"><span class="paper-num">02</span><div><h3>Reinforcement Learning via Conservative Agent for Environments with Random Delays</h3><p class="authors"><strong>Jongsoo Lee</strong>, Jangwon Kim, Jiseok Jeong, Soohee Han</p><p class="venue">Neural Networks, 2026</p><div class="paper-links"><a href="https://github.com/jongsoolee/Conservative-RL" target="_blank" rel="noopener">Code ↗</a></div></div></div>
+      <!-- Add further publications here once titles, author lists, and publication links are verified. -->
+    </section>
+
+    <section id="contact"><div class="heading"><span class="num">06</span><h2>Contact</h2></div><p class="contact">Interested in reinforcement learning, delayed feedback, or robotics? Feel free to connect.</p><p><a href="https://github.com/jongsoolee" target="_blank" rel="noopener">GitHub</a> · <a href="https://www.linkedin.com/in/JSL95" target="_blank" rel="noopener">LinkedIn</a></p><!-- Add your email address here when ready. --></section>
+  </main>
+  <footer><div class="shell">© 2026 Jongsoo Lee · Built with GitHub Pages</div></footer>
+</body>
+</html>
